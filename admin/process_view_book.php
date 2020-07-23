@@ -1,5 +1,5 @@
 <?php session_start();
-	$conn=mysqli_connect("localhost","root","","book_shop")or die("Can't Connect...");
+	$conn=mysqli_connect("localhost","root","","book_store")or die("Can't Connect...");
 	
 	$b_id=$_GET['b_id'];
 	

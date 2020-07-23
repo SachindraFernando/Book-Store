@@ -5,6 +5,9 @@ require('includes/config.php');
 if(count($_POST)>0) {
     $query =   "UPDATE book set b_nm='" . $_POST['b_nm'] . "', b_desc='" . $_POST['b_desc'] . "', b_publisher='" . $_POST['b_publisher'] . "' ,b_edition='" . $_POST['b_edition'] . "' ,b_isbn='" . $_POST['b_isbn'] . "', b_price='" . $_POST['b_price'] . "' WHERE b_id='" . $_POST['b_id'] . "'";
 mysqli_query($conn,$query);
+
+header("location: update_book.php");
+
 $message = "Record Modified Successfully";
 }
 $result = mysqli_query($conn,"SELECT * FROM book WHERE b_id='" . $_GET['b_id'] . "'");
@@ -42,7 +45,7 @@ PRICE:<br>
 <input type="text" name="b_price" class="txtField" value="<?php echo $row['b_price']; ?>">
 <br>
 
-<input type="submit" name="submit" value="Submit" class="buttom">
+<input type="submit" name="submit" value="Update" class="buttom">
 
 </form>
 </body>

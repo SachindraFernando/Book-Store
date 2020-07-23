@@ -4,13 +4,11 @@ $result = mysqli_query($conn,"SELECT * FROM book");
 ?>
 <!DOCTYPE html>
 <html>
-<head>
 
-<title>Update data</title>
-</head>
 <body>
 <table>
 <tr>
+
 <td>Book Name:</td>
 <td>Description:</td>
 <td>Publisher:</td>
@@ -19,6 +17,8 @@ $result = mysqli_query($conn,"SELECT * FROM book");
 <td>PRICE:</td>
 <td>Action</td>
 </tr>
+
+<br>
 <?php
 $i=0;
 while($row = mysqli_fetch_array($result)) {
@@ -27,7 +27,6 @@ $classname="even";
 else
 $classname="odd";
 ?>
-<br>
 <tr class="<?php if(isset($classname)) echo $classname;?>">
 <td><?php echo $row["b_nm"]; ?></td>
 <td><?php echo $row["b_desc"]; ?></td>
@@ -42,6 +41,8 @@ $classname="odd";
 $i++;
 }
 ?>
+
+
 </table>
 </body>
 </html>
