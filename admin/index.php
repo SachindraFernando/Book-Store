@@ -7,9 +7,9 @@
 
 ?>
 
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
 <head>
 		<?php
 			include("includes/head.inc.php");
@@ -38,9 +38,22 @@
 	<!-- start content -->
 	<div id="content">
 		<div class="post">
-			<h1 class="title">Welcome to Admin .....</h1>
+			<h1 class="title">Welcome User .....</h1>
 			<div class="entry">
-				Entry...
+				Book Store (Click All Books above to view list of books)
+				<div class="entry">
+								<br>
+								
+								<br>		
+								
+								<object width="550" height="400">
+								<!--<param name="movie" value="somefilename.swf">-->
+								<embed src="images/background.jpg" width="550" height="400">
+								</embed>
+								</object>
+								<br><br>
+								
+							</div>
 			</div>
 			
 		</div>

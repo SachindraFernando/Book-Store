@@ -1,9 +1,7 @@
 <ul>
 			<li class="current_page_item"><a href="index.php">Home</a></li>
-			<li><a href="category.php">Category</a></li>
-			<li><a href="subcategory.php">Sub_Category</a></li>
-			<li><a href="all_book.php">Books</a></li>
-			
+			<li><a href="all_book.php">All Books</a></li>
+		
 			
 			<?php
 				if(isset($_SESSION['status'])&& $_SESSION['unm']=="admin")
